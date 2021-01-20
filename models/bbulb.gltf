@@ -1,0 +1,190 @@
+{
+    "asset": {
+        "copyright": "2019 (c) Adobe Inc.",
+        "generator": "Adobe Dimension - 6ec80289112e6a9659ad01085610859534b97229",
+        "version": "2.0"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 10100,
+            "type": "VEC3",
+            "max": [
+                0.059109218418598178,
+                0.23597079515457154,
+                0.058992598205804828
+            ],
+            "min": [
+                -0.059109218418598178,
+                -0.00046608998673036695,
+                -0.05899262800812721
+            ]
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 10100,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 10100,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5125,
+            "count": 15000,
+            "type": "SCALAR",
+            "max": [
+                10099.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 121200,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 121200,
+            "byteLength": 121200,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 242400,
+            "byteLength": 80800,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 323200,
+            "byteLength": 60000,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 383200,
+            "uri": "bbulb_binary.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "perspective": {
+                "znear": 0.0000191321214515483,
+                "yfov": 0.6024156808853149,
+                "zfar": 2.0,
+                "aspectRatio": 1.3333333730697632
+            },
+            "type": "perspective",
+            "name": "render_camera"
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.9301108717918396,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "name": "Matte 3"
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Capsule",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "translation": [
+                1.145691156387329,
+                1.0620453357696534,
+                -1.3652948141098023
+            ],
+            "rotation": [
+                -0.06531400233507157,
+                0.934563159942627,
+                0.23935262858867646,
+                0.25502172112464907
+            ],
+            "scale": [
+                0.9999999403953552,
+                1.0,
+                1.0
+            ],
+            "camera": 0,
+            "name": "render_camera_n3d"
+        },
+        {
+            "translation": [
+                0.07161109149456024,
+                0.04799799248576164,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                -0.30070579051971438,
+                0.9537169337272644
+            ],
+            "scale": [
+                1.0000001192092896,
+                1.0000001192092896,
+                1.0
+            ],
+            "mesh": 0,
+            "name": "Capsule"
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0,
+                1
+            ],
+            "name": "scene"
+        }
+    ],
+    "scene": 0,
+    "extensions": {
+        "KHR_xmp": {
+            "packets": [
+                {
+                    "dc:date": "2021-01-20T13:02:32.826+01:00",
+                    "dc:format": "model/gltf+json",
+                    "dc:title": "PIRAMIDD.dn",
+                    "xmp:CreatorTool": "Adobe Dimension"
+                }
+            ]
+        }
+    },
+    "extensionsUsed": [
+        "KHR_xmp"
+    ]
+}

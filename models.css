@@ -1,0 +1,238 @@
+
+
+body {
+  transition: opacity ease-in 0.2s; 
+  background: #010101e6;
+
+} 
+
+body[unresolved] {
+  opacity: 0; 
+  display: block; 
+  overflow: hidden; 
+  position: relative;
+} 
+
+:root{
+  transform-style:flat!important;
+}
+
+#x-model-renderLayer{
+  position:fixed;
+  top:0;
+  left:0;
+  pointer-events:none
+}
+
+
+* {
+  transform-style: preserve-3d;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+html {
+  overflow: hidden;
+  font: 100%/1.5 Helvetica;
+
+
+}
+body {
+  box-sizing: border-box;
+
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+ 
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 1em;
+  margin: auto;
+}
+
+.code {
+  padding: 1em;
+  background:#eee;
+  border:2px solid #777;
+}
+
+.model {
+  pointer-events: none;
+  display: block;
+  width: 50vmin;
+  height: 50vmin;
+}
+.model--medium {
+  width: 37.5vmin;
+  height: 37.5vmin;
+}
+.model--small {
+  width: 25vmin;
+  height: 25vmin;
+}
+.model--tiny {
+  width: 15vmin;
+  height: 15vmin;
+}
+.model--abs {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+}
+.model--abs.model--medium {
+  margin: -18.75vmin;
+}
+.model--abs.model--small {
+  margin: -12.5vmin;
+}
+.model--abs.model--tiny {
+  margin: -7.5vmin;
+}
+.model--spaced {
+  margin: 1.5rem;
+}
+
+.model-wrap {
+  margin: auto;
+  position: relative;
+}
+
+.test {
+  margin: 5em;
+
+}
+.test__output {
+
+  font-size: 0;
+  
+  text-align: center;
+ 
+  padding:10;
+  position: fixed;
+  z-index: -1;
+}
+.test .model {
+
+  display: inline-block;
+}
+.test--fail {
+  color: #c00;
+  background: rgba(200,0,0,.2)
+}
+.test--fail::before {
+  content: 'FAILING TEST'
+}
+
+.test--2 .model {
+  min-width: 40rem;
+  min-height: 40rem;
+
+}
+
+.test--4 .test__output {
+  white-space: nowrap;
+  overflow: scroll(5);
+
+}
+
+.test--5 .test__output {
+  position: relative;
+  height: 50vmin;
+
+}
+
+.test--6 .model {
+  transition: 1s transform;
+
+}
+.test--6 .test__output:hover .model {
+  transform: rotateY(90deg)
+}
+
+.test--8 .model-wrap, .test--9 .model-wrap {
+  height: 50vmin;
+  width: 50vmin;
+}
+
+.test--8 .model {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.test__info {
+  margin: auto;
+  width: 50%;
+  
+  padding: 10px;
+}
+
+
+
+@keyframes spin-xyz {
+  to {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+@keyframes spin-x {
+  to {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes spin-y {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes spin-z {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes swing-x {
+  from {
+    transform: translateX(-25vw);
+  }
+  to {
+    transform: translateX(25vw);
+  }
+}
+
+@keyframes spin-xy {
+  from {
+    transform: translateX(-25vw);
+  }
+  to {
+    transform: translateY(25vw);
+  }
+}
+
+@keyframes spin-yz {
+  from {
+    transform: translateY(-25vw);
+  }
+  to {
+    transform: translateZ(25vw);
+  }
+}
+
+@media (any-pointer: fine) {
+	.cursor {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: block;
+		pointer-events: none;
+		opacity: 0;
+	}
+	.cursor__inner {
+		fill: var(--cursor-fill);
+		stroke: var(--cursor-stroke);
+		stroke-width: var(--cursor-stroke-width);
+	}
+}
+

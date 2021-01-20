@@ -1,0 +1,197 @@
+{
+    "asset": {
+        "copyright": "2019 (c) Adobe Inc.",
+        "generator": "Adobe Dimension - 6ec80289112e6a9659ad01085610859534b97229",
+        "version": "2.0"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 848,
+            "type": "VEC3",
+            "max": [
+                1.999999987845058e-8,
+                0.19999998807907105,
+                0.09998393058776856
+            ],
+            "min": [
+                -0.09999997913837433,
+                0.0,
+                -0.09998396784067154
+            ]
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 848,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 848,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5125,
+            "count": 1356,
+            "type": "SCALAR",
+            "max": [
+                847.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 10176,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 10176,
+            "byteLength": 10176,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 20352,
+            "byteLength": 6784,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 27136,
+            "byteLength": 5424,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 32560,
+            "uri": "halfpipe_binary.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "perspective": {
+                "znear": 0.000015084688129718416,
+                "yfov": 0.6024156808853149,
+                "zfar": 2.0,
+                "aspectRatio": 1.3333333730697632
+            },
+            "type": "perspective",
+            "name": "render_camera"
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.0,
+                    1.0,
+                    0.854992687702179,
+                    0.25
+                ]
+            },
+            "alphaMode": "BLEND",
+            "name": "Wax",
+            "doubleSided": true
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Half Pipe",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "translation": [
+                1.145691156387329,
+                1.0620453357696534,
+                -1.3652948141098023
+            ],
+            "rotation": [
+                -0.06531400233507157,
+                0.934563159942627,
+                0.23935262858867646,
+                0.25502172112464907
+            ],
+            "scale": [
+                0.9999999403953552,
+                1.0,
+                1.0
+            ],
+            "camera": 0,
+            "name": "render_camera_n3d"
+        },
+        {
+            "children": [
+                2
+            ],
+            "translation": [
+                0.2552730441093445,
+                0.0,
+                0.0
+            ],
+            "name": "Group"
+        },
+        {
+            "translation": [
+                -0.021254343912005426,
+                0.17966558039188386,
+                -0.038857292383909228
+            ],
+            "rotation": [
+                -0.0895082950592041,
+                0.4211033880710602,
+                0.18765805661678315,
+                0.8828616142272949
+            ],
+            "mesh": 0,
+            "name": "Half Pipe"
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0,
+                1
+            ],
+            "name": "scene"
+        }
+    ],
+    "scene": 0,
+    "extensions": {
+        "KHR_xmp": {
+            "packets": [
+                {
+                    "dc:date": "2021-01-20T13:02:32.826+01:00",
+                    "dc:format": "model/gltf+json",
+                    "dc:title": "PIRAMIDD.dn",
+                    "xmp:CreatorTool": "Adobe Dimension"
+                }
+            ]
+        }
+    },
+    "extensionsUsed": [
+        "KHR_xmp"
+    ]
+}

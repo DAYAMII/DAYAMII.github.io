@@ -1,0 +1,221 @@
+{
+    "asset": {
+        "copyright": "2019 (c) Adobe Inc.",
+        "generator": "Adobe Dimension - 6ec80289112e6a9659ad01085610859534b97229",
+        "version": "2.0"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 18,
+            "type": "VEC3",
+            "max": [
+                0.11551520228385925,
+                0.19949756562709809,
+                0.09999998658895493
+            ],
+            "min": [
+                -0.05768987908959389,
+                -0.0005024200072512031,
+                -0.10000000894069672
+            ]
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 18,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 18,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5125,
+            "count": 24,
+            "type": "SCALAR",
+            "max": [
+                17.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 216,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 216,
+            "byteLength": 216,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 432,
+            "byteLength": 144,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 576,
+            "byteLength": 96,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 672,
+            "uri": "PRI_binary.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "perspective": {
+                "znear": 0.0000191321214515483,
+                "yfov": 0.6024156808853149,
+                "zfar": 2.0,
+                "aspectRatio": 1.3333333730697632
+            },
+            "type": "perspective",
+            "name": "render_camera"
+        }
+    ],
+    "images": [
+        {
+            "name": "printACD",
+            "uri": "PRI_images/printACD.jpg",
+            "mimeType": "image/jpeg"
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0,
+                    "extensions": {
+                        "KHR_texture_transform": {
+                            "offset": [
+                                0.23999999463558198,
+                                -14
+                            ],
+                            "rotation": 0,
+                            "scale": [
+                                15,
+                                15
+                            ]
+                        }
+                    }
+                },
+                "metallicFactor": 0.0
+            },
+            "name": "Matte 2"
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Prism",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "translation": [
+                1.145691156387329,
+                1.0620453357696534,
+                -1.3652948141098023
+            ],
+            "rotation": [
+                -0.06531400233507157,
+                0.934563159942627,
+                0.23935262858867646,
+                0.25502172112464907
+            ],
+            "scale": [
+                0.9999999403953552,
+                1.0,
+                1.0
+            ],
+            "camera": 0,
+            "name": "render_camera_n3d"
+        },
+        {
+            "translation": [
+                0.3340461552143097,
+                0.14065614342689515,
+                0.04983752593398094
+            ],
+            "rotation": [
+                0.16062183678150178,
+                0.8360686302185059,
+                -0.5238742828369141,
+                -0.02730531431734562
+            ],
+            "scale": [
+                1.0000014305114747,
+                0.8075540065765381,
+                0.9999996423721314
+            ],
+            "mesh": 0,
+            "name": "Prism"
+        }
+    ],
+    "samplers": [
+        {}
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0,
+                1
+            ],
+            "name": "scene"
+        }
+    ],
+    "textures": [
+        {
+            "name": "texture66219",
+            "sampler": 0,
+            "source": 0
+        }
+    ],
+    "scene": 0,
+    "extensions": {
+        "KHR_xmp": {
+            "packets": [
+                {
+                    "dc:date": "2021-01-20T13:02:32.826+01:00",
+                    "dc:format": "model/gltf+json",
+                    "dc:title": "PIRAMIDD.dn",
+                    "xmp:CreatorTool": "Adobe Dimension"
+                }
+            ]
+        }
+    },
+    "extensionsUsed": [
+        "KHR_xmp",
+        "KHR_texture_transform"
+    ],
+    "extensionsRequired": [
+        "KHR_texture_transform"
+    ]
+}
